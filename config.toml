@@ -1,5 +1,5 @@
 # The base URL of your site where it is going to be published.
-base_url = "https://scientiac.space/carboxide"
+base_url = "https://template.carboxi.de"
 
 # About the author
 author ="John Doe"
@@ -22,7 +22,7 @@ highlight_theme = "base16-ocean-light" # https://www.getzola.org/documentation/g
 
 # Extra information needed for the setup.
 [extra]
-url = "scientiac.space/carboxide" # The domain name that you are using without `https:///`
+url = "template.carboxi.de" # The domain name that you are using without `https:///`
 email = "person@domain.com" # A email. Required to setup the indieauth login.
 profile = "/thumbnail.png" # Replace the `thumbnail.png` file at `/static`
 note = "I am John Doe. I am an example person for everyone." # A note about yourself. (A bio)
