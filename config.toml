@@ -1,0 +1,28 @@
+# The base URL of your site where it is going to be published.
+base_url = "https://example.com"
+
+# About the author
+author ="John Doe"
+title = "Doe's Writings"
+description = "This blog is about the daily life of John Doe."
+
+# Generate an Atom/RSS feed for subscription.
+feed_filenames = [ "atom.xml", "rss.xml" ]
+generate_feeds = true
+
+# Enable tags for the sake of having tags.
+taxonomies = [
+    {name = "tags", output = true}
+]
+
+# Enable syntax highlighting for codeblocks.
+[markdown]
+highlight_code = true
+highlight_theme = "base16-ocean-light" # https://www.getzola.org/documentation/getting-started/configuration/#syntax-highlighting
+
+# Extra information needed for the setup.
+[extra]
+url = "example.com" # The domain name that you are using without `https:///`
+email = "person@domain.com" # A email. Required to setup the indieauth login.
+profile = "/thumbnail.png" # Replace the `thumbnail.png` file at `/static`
+note = "I am John Doe. I am an example person for everyone." # A note about yourself. (A bio)
