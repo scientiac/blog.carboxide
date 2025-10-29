@@ -3,7 +3,7 @@ base_url = "https://template.carboxi.de"
 
 # About the author
 author ="John Doe"
-title = "Doe's Writings"
+title = "template::carboxide"
 description = "This blog is about the daily life of John Doe."
 
 # Generate an Atom/RSS feed for subscription.
