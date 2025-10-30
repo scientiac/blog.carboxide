@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+    <title>template::carboxide</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="webmention" href="https://webmention.io/template.carboxi.de/webmention" />
+
+    
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://template.carboxi.de/rss.xml">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 80 85%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23a1a1a1%22>⌬</text></svg>">
+</head>
+
+<body>
+    
+
+
+
+
+
+
+
+<div>
+    <div class="h-entry">
+
+    
+  <div class="p-author h-card" style="display: none;">
+    <a class="u-url" href="https:&#x2F;&#x2F;template.carboxi.de" rel="me">
+      <a class="u-email" href="mailto:person@domain.com" rel="me">
+      <img class="u-photo" src="&#x2F;thumbnail.png" alt="John Doe">
+      <span class="p-name">John Doe</span>
+      <p class="p-note">I am John Doe. I am an example person for everyone.</p>
+    </a>
+  </div>
+
+
+    <h1 class="p-name"><a href="https:&#x2F;&#x2F;template.carboxi.de">Template</a></h1>
+        <a class="u-url" href="https:&#x2F;&#x2F;template.carboxi.de&#x2F;one&#x2F;" style="display: none;"></a>
+        <div class="e-content p-content">
+          
+            <p>This is a minimal zola static site setup with webmentions support using github workflows.</p>
+<p>Here is the <a href="https://flux.carboxi.de/how-you-can-use-this-writing-setup/">tutorial</a> for setting this up for yourself.</p>
+<p>And this is the link to the source code of this setup on GitHub: <a href="https://github.com/scientiac/blog.carboxide">scientiac/blog.carboxide</a>.</p>
+<h2 id="sites-using-this-setup">Sites using this setup.</h2>
+<ol>
+<li><a href="https://flux.carboxi.de">flux.carboxi.de</a></li>
+<li><a href="https://faulty.carboxi.de">faulty.carboxi.de</a></li>
+</ol>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<pre style="background-color:#eff1f5;color:#4f5b66;"><code><span>---
+</span></code></pre>
+<hr />
+<pre style="background-color:#eff1f5;color:#4f5b66;"><code><span>***
+</span></code></pre>
+<hr />
+<h2 id="emphasis">Emphasis</h2>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><del>Strikethrough</del></p>
+<p><em class="inner-voice">This is handwriting.</em></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Blockquotes can also be nested...</p>
+<blockquote>
+<p>...by using additional greater-than signs right next to each other...</p>
+<blockquote>
+<p>...or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="lists">Lists</h2>
+<p>Unordered</p>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Very easy!</li>
+</ul>
+<p>Ordered</p>
+<ol>
+<li>
+<p>Lorem ipsum dolor sit amet</p>
+</li>
+<li>
+<p>Consectetur adipiscing elit</p>
+</li>
+<li>
+<p>Integer molestie lorem at massa</p>
+</li>
+<li>
+<p>You can use sequential numbers...</p>
+</li>
+<li>
+<p>...or keep all the numbers as <code>1.</code></p>
+</li>
+</ol>
+<p>Start numbering with offset:</p>
+<ol start="57">
+<li>foo</li>
+<li>bar</li>
+</ol>
+<h2 id="code">Code</h2>
+<p>Inline <code>code</code></p>
+<p>Indented code</p>
+<pre style="background-color:#eff1f5;color:#4f5b66;"><code><span>// Some comments
+</span><span>line 1 of code
+</span><span>line 2 of code
+</span><span>line 3 of code
+</span></code></pre>
+<p>Block code "fences"</p>
+<pre style="background-color:#eff1f5;color:#4f5b66;"><code><span>Sample text here...
+</span></code></pre>
+<p>Syntax highlighting</p>
+<pre data-lang="js" style="background-color:#eff1f5;color:#4f5b66;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#b48ead;">var </span><span style="color:#8fa1b3;">foo </span><span>= </span><span style="color:#b48ead;">function </span><span>(</span><span style="color:#bf616a;">bar</span><span>) {
+</span><span>  </span><span style="color:#b48ead;">return </span><span style="color:#bf616a;">bar</span><span>++;
+</span><span>};
+</span><span>
+</span><span style="color:#d08770;">console</span><span>.</span><span style="color:#96b5b4;">log</span><span>(</span><span style="color:#8fa1b3;">foo</span><span>(</span><span style="color:#d08770;">5</span><span>));
+</span></code></pre>
+<h2 id="tables">Tables</h2>
+<table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody>
+<tr><td>data</td><td>path to data files to supply the data that will be passed into templates.</td></tr>
+<tr><td>engine</td><td>engine to be used for processing templates. Handlebars is the default.</td></tr>
+<tr><td>ext</td><td>extension to be used for dest files.</td></tr>
+</tbody></table>
+<p>Right aligned columns</p>
+<table><thead><tr><th style="text-align: right">Option</th><th style="text-align: right">Description</th></tr></thead><tbody>
+<tr><td style="text-align: right">data</td><td style="text-align: right">path to data files to supply the data that will be passed into templates.</td></tr>
+<tr><td style="text-align: right">engine</td><td style="text-align: right">engine to be used for processing templates. Handlebars is the default.</td></tr>
+<tr><td style="text-align: right">ext</td><td style="text-align: right">extension to be used for dest files.</td></tr>
+</tbody></table>
+<h2 id="links">Links</h2>
+<p><a href="http://dev.nodeca.com">link text</a></p>
+<p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
+<p>Autoconverted link <a href="https://github.com/nodeca/pica">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
+<h2 id="images">Images</h2>
+<p><img src="https://octodex.github.com/images/minion.png" alt="Minion" />
+<img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="Stormtroopocat" title="The Stormtroopocat" /></p>
+<p>Like links, Images also have a footnote style syntax</p>
+<p><img src="https://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat" /></p>
+<p>With a reference later in the document defining the URL location:</p>
+
+        </div>
+
+        <div class="date">
+          
+              <time class="dt-published" datetime="2014-03-14T15:09:26Z">
+                  March 14, 2014
+              </time>
+          
+        </div>
+            
+        <div class="tag">
+          
+              
+                  <a class="u-category" href="https://template.carboxi.de/tags/template/">template</a>
+              
+          
+        </div>
+    </div>
+</div>
+
+<div class="spacing"><div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="next">
+      <h2>Wondering?</h2>
+      <div><p>Maybe explore my <a href="/tags">tags</a> & archives and send me a <a href="https://indieweb.org/Webmention">webmention</a>. Follow the site using <a href="https://template.carboxi.de/rss.xml">RSS</a>. Just roam arount a bit.</p></div>
+  </section>
+
+
+<div class="spacing"><div>
+
+<section>
+  
+  
+  
+  
+  
+
+  <div>
+    <h3>Posts from March 2014</h3>
+    
+      
+        
+        
+        
+        <article class="listing latest-month-post current-post">
+          <a href="https://template.carboxi.de/one/">Template</a>
+          <span class="separator"></span>
+          <time datetime="2014-03-14">
+            14<sup>th</sup>
+          </time>
+        </article>
+      
+    
+  </div>
+
+
+  
+  <details class="previous-months-accordion">
+    <summary>Archives</summary>
+    
+    
+    
+    
+      
+      
+      
+      
+      
+    
+  </details>
+</section>
+
+
+</body>
+
+<footer>
+  
+  <p>
+  <a href="/" >Main</a>
+  <a href="/rss.xml">Feed</a>
+  <a href="/author" >Author</a>
+  <a href="/nexus" >Nexus</a>
+  <a href="/now" >Now</a>
+  </p>
+  
+</footer>
+</html>
