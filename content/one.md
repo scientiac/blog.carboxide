@@ -6,6 +6,11 @@ date = 2014-03-14T15:09:26+05:45
 tags = ["template"]
 +++
 
+## Sites using this setup.
+
+1. [flux.carboxi.de](https://flux.carboxi.de)
+2. [faulty.carboxi.de](https://faulty.carboxi.de)
+
 # h1 Heading
 
 ## h2 Heading
