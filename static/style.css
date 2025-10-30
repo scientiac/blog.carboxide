@@ -104,6 +104,12 @@ summary {
   text-align: center;
 }
 
+kbd, code {
+	font-weight: bold;
+  font-size: 1rem;
+	padding: 0.10rem 0.25rem;
+}
+
 pre {
   max-width: 100%;
   overflow: auto;
