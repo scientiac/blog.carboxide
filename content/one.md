@@ -6,6 +6,12 @@ date = 2014-03-14T15:09:26+05:45
 tags = ["template"]
 +++
 
+This is a minimal zola static site setup with webmentions support using github workflows.
+
+Here is the [tutorial](https://flux.carboxi.de/how-you-can-use-this-writing-setup/) for setting this up for yourself.
+
+And this is the link to the source code of this blog on GitHub: [scientiac/blog.carboxide](https://github.com/scientiac/blog.carboxide).
+
 ## Sites using this setup.
 
 1. [flux.carboxi.de](https://flux.carboxi.de)
