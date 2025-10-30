@@ -1,3 +1,41 @@
+/* ============================================
+   COLOR CUSTOMIZATION
+   ============================================
+   Modify these color variables to customize 
+   the appearance of your site. All colors 
+   throughout the stylesheet reference these 
+   variables for easy theming.
+   ============================================ */
+
+:root {
+  /* Background colors */
+  --color-bg-body: #FFFFFF;           /* Main page background (ivory/cream) */
+  --color-bg-highlight: #FFFFb0;       /* Blockquote background (light yellow) */
+  --color-bg-table-header: #f5f5f5;    /* Table header background */
+  --color-bg-table-hover: #f9f9f9;     /* Table row hover background */
+  
+  /* Text colors */
+  --color-text-primary: rgb(71, 71, 71);  /* Main text color (dark gray) */
+  --color-text-secondary: #555;           /* Secondary text (blockquotes, inner voice) */
+  --color-text-tertiary: #333;            /* Table text */
+  --color-text-muted: gray;               /* Month headers */
+  --color-text-link: black;               /* Link text color */
+  --color-inner-voice: #555;           /*  Text inner voice */
+  
+  /* Accent colors */
+  --color-accent-primary: #ffa5f0;     /* Primary accent (orange - used for link underlines, borders, icons) */
+  --color-accent-quote: #ccc;          /* Blockquote decorative quotes */
+  
+  /* Border colors */
+  --color-border-light: #e0e0e0;       /* Table borders */
+  --color-border-dotted: rgba(0, 0, 0, 0.5);  /* Separator dotted line */
+  --color-border-solid: rgba(0, 0, 0, 1);     /* Current/latest post separator */
+}
+
+/* ============================================
+   FONT DECLARATIONS
+   ============================================ */
+
 @font-face {
   font-display: block;
   font-family: 'Caveat';
@@ -37,6 +75,10 @@
   src:url(/fonts/LibertinusSerif-Regular.woff2)format("woff2")
 }
 
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
 * {
   --column-width: 70ch;
   --font-family:"Libertinus", P052, serif;
@@ -49,10 +91,10 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: var(--color-bg-body);
   margin: 0 auto;
   padding:  8em 1em 1em 1em;
-  color: rgb(71, 71, 71);
+  color: var(--color-text-primary);
   font-family:var(--font-family);
   font-size:var(--font-size);
   line-height: var(--font-line-height);
@@ -68,7 +110,7 @@ a {
 a:not(h1 a, footer a, .listing a) {
     position: relative;
     font-size: 1.01rem;
-    color: black;
+    color: var(--color-text-link);
 }
 
 a:not(h1 a, footer a, .listing a):after {
@@ -80,8 +122,10 @@ a:not(h1 a, footer a, .listing a):after {
     right: 0;
     bottom: calc(var(--deco-height) * -0.225);
     height: var(--deco-height);
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0, 50 10 T 100 10' stroke='%23ffa500' stroke-width='4'/%3E%3C/svg%3E%0A");
-    background-size: 300% 200%;
+    background-color: var(--color-accent-primary);
+    mask-image: url("data:image/svg+xml,%3Csvg width='100' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0, 50 10 T 100 10' stroke='black' stroke-width='4'/%3E%3C/svg%3E%0A");
+    mask-size: 300% 200%;
+    mask-repeat: repeat-x;
 }
 
 h1 {
@@ -107,7 +151,6 @@ summary {
 kbd, code {
 	font-weight: bold;
   font-size: 1rem;
-	padding: 0.10rem 0.25rem;
 }
 
 pre {
@@ -179,7 +222,7 @@ time sup {
 .separator {
   flex-grow: 1000;
   height: 1px;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+  border-bottom: 1px dotted var(--color-border-dotted);
 }
 
 .date-header {
@@ -202,7 +245,7 @@ time sup {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 1.5rem;
-  color: gray;
+  color: var(--color-text-muted);
 }
 
 footer {
@@ -237,7 +280,7 @@ hr::before {
 
 .latest-post, .current-post {
   .separator {
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid var(--color-border-solid);
   }
 }
 
@@ -259,8 +302,8 @@ blockquote {
     padding: 10px 25px;
     margin: 5px 0;
     font-style: italic;
-    color: #555;
-    background-color: #FFFFb0;
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-highlight);
     border-radius: 0.5rem;
     position: relative;
 }
@@ -268,7 +311,7 @@ blockquote {
 blockquote::before,
 blockquote::after {
     font-size: 2rem;
-    color: #ccc;
+    color: var(--color-accent-quote);
     position: absolute;
 }
 
@@ -301,22 +344,22 @@ table {
     border-collapse: collapse;
     margin: 1rem 0;
     font-size: 0.9rem;
-    color: #333;
+    color: var(--color-text-tertiary);
 }
 
 th, td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-border-light);
 }
 
 th {
-    background-color: #f5f5f5;
+    background-color: var(--color-bg-table-header);
     font-weight: bold;
 }
 
 tr:hover {
-    background-color: #f9f9f9;
+    background-color: var(--color-bg-table-hover);
 }
 
 @media (max-width: 600px) {
@@ -348,7 +391,7 @@ tr:hover {
     min-height: 1.5rem;
     max-height: 1.5rem;
 		border-radius: 50%;
-    border-color: #ffa500;
+    border-color: var(--color-accent-primary);
 		position: relative;
 	}
 }
@@ -365,26 +408,26 @@ tr:hover {
 /* Different icons for likes and reposts */
 .mention-profile.like::after {
     content: "♡";
-    color: #ffa500;
+    color: var(--color-accent-primary);
     font-weight: bold;
 }
 .mention-profile.link::after {
     content: "⁎";
-    color: #ffa500;
+    color: var(--color-accent-primary);
     font-weight: bold;
 }
 .mention-profile.reply::after {
     content: "✉";
-    color: #ffa500;
+    color: var(--color-accent-primary);
     font-size: 1rem;
     font-weight: bold;
 }
 
-.inner-voice code, .inner-voice {
+{
   position: relative;
   font-family: "Caveat", serif;
   font-size: 1rem;
-  color: #555555;
+  color: var(--color-text-secondary);
 
   &:after {
     --deco-height: 0.3125em;
@@ -394,9 +437,10 @@ tr:hover {
     right: 0;
     bottom: calc(var(--deco-height) * -0.625);
     height: var(--deco-height);
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0, 50 10 T 100 10' stroke='%23555555' stroke-width='2'/%3E%3C/svg%3E%0A");
-    background-size: 300% 200%; /* Adjust size for more variation */
-    background-repeat: repeat-x; /* Repeat horizontally */
-    background-position: 0 50%; /* Center the background vertically */
+    background-color: var(--color-inner-voice);
+    mask-image: url("data:image/svg+xml,%3Csvg width='100' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 25 0, 50 10 T 100 10' stroke='black' stroke-width='2'/%3E%3C/svg%3E%0A");
+    mask-size: 300% 200%;
+    mask-repeat: repeat-x;
+    mask-position: 0 50%;
   }
 }
