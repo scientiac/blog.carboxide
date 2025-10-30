@@ -423,11 +423,11 @@ tr:hover {
     font-weight: bold;
 }
 
-{
+.inner-voice code, .inner-voice {
   position: relative;
   font-family: "Caveat", serif;
   font-size: 1rem;
-  color: var(--color-text-secondary);
+  color: var(--color-inner-voice);
 
   &:after {
     --deco-height: 0.3125em;
